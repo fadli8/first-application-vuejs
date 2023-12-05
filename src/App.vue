@@ -1,6 +1,6 @@
 
 <template>
-  <navbar :pages="navigation" :selected_page="selected_item" :clickLinkNavbar="(index) => selected_item = index" />
+  <navbar :pages="publishPage" :selected_page="selected_item" :clickLinkNavbar="(index) => selected_item = index" />
   <WebView :pages="navigation" :select="selected_item" :creagePage="creagePage" />
 </template>
 
@@ -11,6 +11,11 @@
     export default {
       components : {
         navbar, WebView
+      },
+      computed: {
+        publishPage(){
+          return this.navigation.filter(el => el.publish == true)
+        }
       },
       data() {
         return {
@@ -34,10 +39,11 @@
         creagePage(pageObject){
           console.log("this is from app.vue file :smily-face :"+JSON.stringify(pageObject))
           this.navigation.push({
-            "name": pageObject.firstname,
-            "href": "#",
+            "title": pageObject.title,
+            "url": pageObject.url,
+            "content": pageObject.content,
             "current": false,
-            "publish":true
+            "publish":pageObject.publish
           });
 
           console.log(this.navigation);

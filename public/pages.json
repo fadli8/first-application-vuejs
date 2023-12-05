@@ -1,25 +1,29 @@
 [
     { 
-        "name": "Dashboard",
-        "href": "#",
+        "title": "Dashboard",
+        "url": "#",
+        "content": "Dashboard content",
         "current": true,
         "publish":true
     },
     { 
-        "name": "Team",
-        "href": "#",
+        "title": "Team",
+        "url": "#",
+        "content": "team content",
         "current": false,
         "publish":true
     },
     { 
-        "name": "Projects",
-        "href": "#",
+        "title": "Projects",
+        "url": "#",
+        "content": "projects content",
         "current": false,
         "publish":true
     },
     { 
-        "name": "Calendar",
-        "href": "#",
+        "title": "Calendar",
+        "url": "#",
+        "content": "calendar content",
         "current": false,
         "publish":true
     }

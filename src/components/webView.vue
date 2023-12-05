@@ -3,7 +3,8 @@
     <div class="w-full py-2 bg-[#f1f1f1]">
         <div class="w-full flex ">
             <div class="w-full m-2 border-[#d6d6d6] shadow bg-white rounded-sm p-3">
-                <h1 v-if="pages.length > 0" class="text-[30px] text-center">{{ pages[select].name }}</h1>
+                <h1 v-if="pages.length > 0" class="text-[30px] text-center">{{ pages[select].title }}</h1>
+                <p v-if="pages.length > 0" class="text-[20px]">{{ pages[select].content }}</p>
             </div>
         </div>
 
