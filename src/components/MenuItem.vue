@@ -1,0 +1,20 @@
+<template>
+    <a :href="page.href" 
+        
+        :class="{'bg-gray-900 text-white':isActive, 'text-gray-300':!isActive}"
+        class="hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page"
+        >
+        {{page.name}}
+    </a> 
+    <!-- @click="clickLink(index)" -->
+</template>
+
+<script>
+    export default {    
+        props:[   
+            "page", "isActive", "clickLink"
+        ],
+    }
+</script>
+
+<style scoped></style>

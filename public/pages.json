@@ -1,0 +1,26 @@
+[
+    { 
+        "name": "Dashboard",
+        "href": "#",
+        "current": true,
+        "publish":true
+    },
+    { 
+        "name": "Team",
+        "href": "#",
+        "current": false,
+        "publish":true
+    },
+    { 
+        "name": "Projects",
+        "href": "#",
+        "current": false,
+        "publish":true
+    },
+    { 
+        "name": "Calendar",
+        "href": "#",
+        "current": false,
+        "publish":true
+    }
+]
